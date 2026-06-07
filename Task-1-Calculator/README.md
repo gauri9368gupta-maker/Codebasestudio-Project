@@ -171,4 +171,9 @@ If you found this project useful, consider giving it a ⭐ on GitHub and sharing
 ## Preview 
 ![alt text](image.png)
 
+## 🔗 Github Repository
+https://github.com/gauri9368gupta-maker/Codebasestudio-Project
+
+
 ## 🔗 Live Demo
+https://gauri9368gupta-maker.github.io/Codebasestudio-Project/Task1-Calculator/
