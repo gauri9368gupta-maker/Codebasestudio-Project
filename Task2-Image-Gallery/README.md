@@ -166,13 +166,13 @@ Contributions are welcome!
 ---
 
 ## Preview 
-![alt text](preview.png)
+![Preview](images/preview.png)
 
 ## Github Repo Link🔗
 https://github.com/gauri9368gupta-maker/Codebasestudio-project
 
 ## Live Link🔗
-https://gauri9368gupta-maker.github.io/Codebasestudio-Project/Task2-Image-Gallery/
+https://gauri9368gupta-maker.github.io/Codebasestudio-project/Task2-Image-Gallery/
 ---
 
 ## 👩‍💻 Author
