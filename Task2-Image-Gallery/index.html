@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Image Gallery</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>
+            <i class="fa-regular fa-image"></i>
+            Image Gallery with Modal
+        </h1>
+
+        <!-- upload -->
+        <div class="top-controls">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="Search images...">
+            </div>
+
+            <input type="file" id="uploadInput" accept="image/*" multiple hidden>
+
+            <button class="upload-btn" id="uploadBtn">
+                <i class="fa-solid fa-upload"></i>Upload Images </button>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">
+                All
+            </button>
+
+            <button data-filter="nature">                Nature            </button>
+            <button data-filter="travel">                Travel            </button>
+            <button data-filter="animal">                Animals            </button>
+            <button data-filter="cars">                Cars            </button>
+            <button data-filter="favorite">     <i class="fa-solid fa-heart"></i>   Favorites   </button>
+            <button data-filter="trash">  <i class="fa-solid fa-trash"></i>  Trash  </button>
+        </div>
+
+        <!-- Total Images -->
+        <div class="gallery-info">
+            <span id="imageCount">
+                Total Images : 16
+            </span>
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <!-- Nature -->
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images (5).jpeg" alt="Sunset Beach" loading="lazy">
+                <div class="overlay">
+                    <h3>Sunset Beach</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images.jpeg" alt="Mountain View" loading="lazy">
+                <div class="overlay">
+                    <h3>Mountain View</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images (7).jpeg" alt="Lake Forest" loading="lazy">
+                <div class="overlay">
+                    <h3>Lake Forest</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images(10).jpg" alt="Blue Ocean" loading="lazy">
+                <div class="overlay">
+                    <h3>Blue Ocean</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images(13).webp" alt="Cherry Blossom" loading="lazy">
+                <div class="overlay">
+                    <h3>Cherry Blossom</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item nature">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/image.webp" alt="Snow Mountains" loading="lazy">
+                <div class="overlay">
+                    <h3>Snow Mountains</h3>
+                </div>
+            </div>
+
+            <!-- Travel -->
+            <div class="gallery-item travel">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images (6).jpeg" alt="City Lights" loading="lazy">
+                <div class="overlay">
+                    <h3>City Lights</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item travel">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images (9).jpeg" alt="Desert" loading="lazy">
+                <div class="overlay">
+                    <h3>Desert</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item travel">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/night skyline.jpg" alt="Night Skyline" loading="lazy">
+                <div class="overlay">
+                    <h3>Night Skyline</h3>
+                </div>
+            </div>
+
+            <!-- Cars -->
+            <div class="gallery-item cars">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/img1.webp" alt="Porsche" loading="lazy">
+                <div class="overlay">
+                    <h3>Porsche</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item cars">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/img2.jpg" alt="Lamborghini" loading="lazy">
+                <div class="overlay">
+                    <h3>Lamborghini</h3>
+                </div>
+            </div>
+
+            <!-- Animals -->
+            <div class="gallery-item animal">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/images (3).jpeg" alt="Birds" loading="lazy">
+                <div class="overlay">
+                    <h3>Birds</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item animal">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/cats.jpeg" alt="Cats" loading="lazy">
+                <div class="overlay">
+                    <h3>Cats</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item animal">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/img3.jpg" alt="Lion" loading="lazy">
+                <div class="overlay">
+                    <h3>Lion</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item animal">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/img4.jpg" alt="Squirrel" loading="lazy">
+                <div class="overlay">
+                    <h3>Squirrel</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item animal">
+                <div class="card-icons">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-trash trash-icon"></i>
+                </div>
+                <img src="./images/img5.jpg" alt="Tiger" loading="lazy">
+                <div class="overlay">
+                    <h3>Tiger</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+
+        <!-- Download -->
+        <a id="downloadBtn" download title="Download">
+            <i class="fa-solid fa-download"></i>
+        </a>
+
+        <!-- Fullscreen -->
+        <button id="fullscreenBtn" title="Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+        </button>
+
+        <!-- Close -->
+        <span class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+
+        <!-- Previous -->
+        <button class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <!-- Image -->
+        <img class="modal-image" src="" alt="">
+
+        <!-- Next -->
+        <button class="next">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <!-- Bottom Info -->
+        <div class="modal-bottom">
+            <h3 class="caption"></h3>
+            <p class="counter"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
