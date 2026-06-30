@@ -73,38 +73,12 @@ An interactive and responsive Image Gallery built using **HTML, CSS, and JavaScr
 - Google Fonts (Poppins)
 
 ---
-
-## 📂 Project Structure
-
-```
-Image-Gallery/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-│
-└── images/
-    ├── image1.jpg
-    ├── image2.jpg
-    ├── image3.jpg
-    └── ...
-```
-
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/Advanced-Image-Gallery.git
-```
-
-### 2. Open the Project
-
-Open the project folder and launch `index.html` in your browser.
-
+# 1. Clone the Repository
+# 2. Open the Project
 No additional setup or dependencies are required.
 
 ---
@@ -144,11 +118,6 @@ Click the Delete icon inside Trash and confirm the action.
 Click the **Upload Images** button and select one or more images from your computer.
 
 ---
-
-## 📸 Preview
-
-├── ./images/preview.png
-
 
 ---
 
@@ -196,10 +165,14 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
+## Preview 
+![alt text](preview.png)
 
-This project is licensed under the MIT License.
+## Github Repo Link🔗
+https://github.com/gauri9368gupta-maker/Codebasestudio-project
 
+## Live Link🔗
+https://gauri9368gupta-maker.github.io/Codebasestudio-Project/Task2-Image-Gallery/
 ---
 
 ## 👩‍💻 Author
